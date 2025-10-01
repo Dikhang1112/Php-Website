@@ -1,0 +1,68 @@
+# ===== OS / IDE rác =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+*.swp
+*.swo
+*.iml
+.project
+.settings/
+
+# ===== Secrets & certs =====
+.env
+.env.*
+*.pem
+*.key
+*.crt
+
+# ===== Composer / PHP libs =====
+/vendor/
+composer.phar
+composer.json
+composer.lock
+
+# ===== CodeIgniter 4 runtime (không track dữ liệu phát sinh) =====
+/writable/*
+!/writable/.gitkeep
+!/writable/uploads/
+!/writable/uploads/.gitkeep
+!/writable/uploads/index.html
+writable/cache/
+writable/logs/
+writable/session/
+writable/debugbar/
+
+# Nếu có upload công khai trong public:
+public/uploads/*
+!public/uploads/.gitkeep
+!public/uploads/index.html
+
+# ===== PHPUnit / test artifacts =====
+.phpunit.result.cache
+coverage/
+phpunit.xml
+tests/_output/
+
+# ===== Frontend build (nếu có) =====
+node_modules/
+public/build/
+public/dist/
+public/*.map
+
+# ===== DB dumps / tạm =====
+*.sql
+*.sqlite
+*.db
+*.tmp
+*.temp
+*.bak
+*~
+
+# ===== Hệ thống =====
+ehthumbs.db
+ehthumbs_vi.db
+._*
+.Spotlight-V100
+.Trashes
